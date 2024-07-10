@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday, My Best Friend!</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: radial-gradient(circle, #fceabb, #f8b500);
+            font-family: 'Cursive', sans-serif;
+            overflow: hidden;
+            color: #333;
+            text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);
+            animation: moveBackground 20s linear infinite;
+        }
+        @keyframes moveBackground {
+            0% {
+                background-position: 0 0;
+            }
+            100% {
+                background-position: 100% 100%;
+            }
+        }
+        .balloon {
+            position: absolute;
+            width: 50px;
+            animation: float 5s ease-in-out infinite;
+        }
+        .balloon:nth-child(1) {
+            left: 20%;
+            animation-duration: 6s;
+        }
+        .balloon:nth-child(2) {
+            left: 40%;
+            animation-duration: 7s;
+        }
+        .balloon:nth-child(3) {
+            left: 60%;
+            animation-duration: 5s;
+        }
+        .balloon:nth-child(4) {
+            left: 80%;
+            animation-duration: 6.5s;
+        }
+        @keyframes float {
+            0% {
+                top: 100%;
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-30px);
+            }
+            100% {
+                top: 0;
+                transform: translateY(0);
+            }
+        }
+        .ribbon {
+            width: 15px;
+            height: 100px;
+            background: linear-gradient(to bottom, #ffafbd, #ffc3a0);
+            position: absolute;
+            animation: ribbon-float 3s infinite ease-in-out;
+        }
+        .ribbon:nth-child(1) {
+            top: 0;
+            left: 10%;
+            animation-duration: 4s;
+        }
+        .ribbon:nth-child(2) {
+            top: 0;
+            right: 10%;
+            animation-duration: 5s;
+        }
+        @keyframes ribbon-float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+        .message {
+            text-align: center;
+            z-index: 1;
+        }
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            color: #e74c3c;
+        }
+        .heart {
+            color: #e74c3c;
+            font-size: 3em;
+            animation: pulse 1s infinite;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+        p {
+            font-size: 1.2em;
+        }
+        .name {
+            font-weight: bold;
+            font-size: 1.5em;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="balloons">
+        <svg class="balloon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+            <circle cx="32" cy="32" r="32" fill="#ff5252"/>
+        </svg>
+        <svg class="balloon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+            <circle cx="32" cy="32" r="32" fill="#ff5252"/>
+        </svg>
+        <svg class="balloon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+            <circle cx="32" cy="32" r="32" fill="#ff5252"/>
+        </svg>
+        <svg class="balloon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+            <circle cx="32" cy="32" r="32" fill="#ff5252"/>
+        </svg>
+    </div>
+    <div class="ribbons">
+        <div class="ribbon"></div>
+        <div class="ribbon"></div>
+    </div>
+    <div class="message">
+        <h1>Happy Birthday Radha</h1>
+        <div class="heart">❤️</div>
+        <p>On your special day, I want to celebrate the amazing person you are and the wonderful friendship we share. You bring so much joy and laughter into my life, and I'm grateful for every moment we've spent together.</p>
+        <p class="name">Here's to many more adventures and memories together!<br>With all my love,<br>Hello</p>
+    </div>
+</body>
+</html>
